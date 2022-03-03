@@ -16,7 +16,6 @@ const { Provider } = ProductContext;
 
 /** Interface to ProductCard */
 export interface Props {
-  // children?: ReactElement | JSX.Element[]
   children: (args: ProductCardHandlers) => JSX.Element;
   product: Product;
   className?: string;
@@ -27,7 +26,7 @@ export interface Props {
 }
 
 /**
- * Card of Product
+ * Component ProductCard
  * Compound Component Pattern
  * @param children?
  * @param product: Product

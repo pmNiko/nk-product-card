@@ -31,8 +31,6 @@ export const useProduct = ({ product, onChange, initialValues, value = 0 }: Prop
 
     const [counter, setCounter] = useState<number>(initialValues?.count || value)
 
-    // const isMounted = useRef(false)
-
     const increaseBy = (value: number) => {
 
         let newValue = Math.max(counter + value, 0)
@@ -46,21 +44,10 @@ export const useProduct = ({ product, onChange, initialValues, value = 0 }: Prop
         onChange && onChange({ count: newValue, product })
     }
 
-
     /**Reset to counter */
     const reset = () => {
         setCounter(initialValues?.count || value)
     }
-
-    // useEffect(() => {
-    //     if (!isMounted.current) return
-    //     setCounter(value)
-    // }, [value])
-
-    // useEffect(() => {
-    //     isMounted.current = true
-    // }, [isMounted])
-
 
     return {
         counter,

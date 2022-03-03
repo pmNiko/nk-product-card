@@ -11,7 +11,7 @@ export interface Props {
 }
 
 /**
- *
+ * Component ProductTitle
  * @param title? string
  * @param className? string
  * @param styles? CSSProperties

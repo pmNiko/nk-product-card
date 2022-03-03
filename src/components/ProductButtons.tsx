@@ -10,7 +10,7 @@ export interface Props {
 }
 
 /**
- * Interfaz de ProductButtons
+ * Component ProductButtons
  *   @param className?   string
  *   @param style?       CSSProperties
  */

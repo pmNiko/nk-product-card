@@ -28,9 +28,9 @@ const App = () => {
         }): JSX.Element => (
           <>
             <ProductImage />
-
             <ProductTitle />
             <ProductButtons />
+            <button onClick={reset}>Reset</button>
           </>
         )}
       </ProductCard>
